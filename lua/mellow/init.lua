@@ -132,15 +132,15 @@ local set_groups = function()
 
         { hg = 'CmpItemAbbrDeprecated', fg = "#808080", gui = "strikethrough" },
         { hg = 'CmpItemAbbrMatch', fg = "#569CD6" },
-        { hg = 'CmpItemAbbrMatchFuzzy', link = 'CmpItemAbbrMatch' },
+        { hg = 'CmpItemAbbrMatchFuzzy', fg = "#569CD6" },
         { hg = 'CmpItemKindVariable', fg = "#9CDCFE" },
-        { hg = 'CmpItemKindInterface', link = 'CmpItemKindVariable' },
-        { hg = 'CmpItemKindText', link = 'CmpItemKindVariable' },
+        { hg = 'CmpItemKindInterface', fg = "#9CDCFE" },
+        { hg = 'CmpItemKindText', fg = "#9CDCFE" },
         { hg = 'CmpItemKindFunction', fg = "#C586C0" },
-        { hg = 'CmpItemKindMethod', link = 'CmpItemKindFunction' },
+        { hg = 'CmpItemKindMethod', fg = "#C586C0" },
         { hg = 'CmpItemKindKeyword', fg = "#D4D4D4" },
-        { hg = 'CmpItemKindProperty', link = 'CmpItemKindKeyword' },
-        { hg = 'CmpItemKindUnit', link = 'CmpItemKindKeyword' },
+        { hg = 'CmpItemKindProperty', fg = "#D4D4D4" },
+        { hg = 'CmpItemKindUnit', fg = "#D4D4D4" },
 
         -- HTML
         { hg = "htmlArg", fg = c.bright_blue, gui = "italic" }, -- attributes
@@ -177,14 +177,14 @@ local set_groups = function()
         { hg = "DiagnosticWarn", fg = c.yellow, gui = "bold" },
         { hg = "DiagnosticInfo", fg = c.blue, gui = "bold" },
         { hg = "DiagnosticHint", fg = c.green, gui = "bold" },
-        { hg = "DiagnosticUnderlineError", fg = c.cyan, gui = "undercurl", cterm = "undercurl" },
-        { hg = "DiagnosticUnderlineWarn", fg = c.yellow, gui = "undercurl", cterm = "undercurl" },
-        { hg = "DiagnosticUnderlineInfo", fg = c.blue, gui = "undercurl", cterm = "undercurl" },
-        { hg = "DiagnosticUnderlineHint", fg = c.green, gui = "undercurl", cterm = "undercurl" },
         { hg = 'DiagnosticVirtualTextError', fg = c.gray05, gui = "undercurl,bold" },
         { hg = 'DiagnosticVirtualTextWarn', fg = c.gray05, gui = "undercurl,bold" },
         { hg = 'DiagnosticVirtualTextHint', fg = c.gray05, gui = "undercurl,bold" },
         { hg = 'DiagnosticVirtualTextInfo', fg = c.gray05, gui = "undercurl,bold" },
+        { hg = "DiagnosticUnderlineError", guisp = c.cyan, gui = "undercurl" },
+        { hg = "DiagnosticUnderlineWarn", guisp = c.yellow, gui = "undercurl" },
+        { hg = "DiagnosticUnderlineInfo", guisp = c.blue, gui = "undercurl" },
+        { hg = "DiagnosticUnderlineHint", guisp = c.green, gui = "undercurl" },
 
         -- Neovim's built-in language server client
         { hg = "LspReferenceWrite", fg = c.blue, gui = "underline" },
