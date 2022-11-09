@@ -20,6 +20,8 @@ A soothing dark color scheme for neovim.
 - Terminal colors inside neovim.
 
 ### Differences from the original mellow.nvim
+- Diagnostic Erros are red and Diagnostic Warns are yellow now
+- Diagnostic Virtual Texts are the same color as Comment but is bold and undercurl
 - Less bright nvim-ts-rainbow's, move Red to the end of the color set
 - Somewhat distinct colors in nvim-cmp menus
 - Clearer Visual selections
