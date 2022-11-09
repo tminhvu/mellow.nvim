@@ -19,6 +19,17 @@ A soothing dark color scheme for neovim.
 - Supports the latest neovim `0.8`.
 - Terminal colors inside neovim.
 
+### Differences from the original mellow.nvim
+- Less bright Diagnostic Virtual Texts, with underculs
+- Swap Diagnostic Warn to become Orange and Diagnostic Error to become Red
+- Less bright nvim-ts-rainbow's, move Red to the end of the color set
+- Somewhat distinct colors in nvim-cmp menus
+- Clearer Visual selections
+- Hidden EndOfBuffer characters
+- Clearer Telescope matching highlights
+- WinBarError for my own config
+- Bold StatusLine
+
 ### Plugin Support
 
 - [TreeSitter](https://github.com/nvim-treesitter/nvim-treesitter)
@@ -36,7 +47,7 @@ A soothing dark color scheme for neovim.
 
 ## Installation
 
-Head to the original at [kvrohit/mellow.nvim](https://github.com/kvrohit/mellow.nvim) instead, for this has my personal customizations
+Head to the original at [kvrohit/mellow.nvim](https://github.com/kvrohit/mellow.nvim) instead, for this has my personal customizations and might be behind in updates
 
 ## Credits
 

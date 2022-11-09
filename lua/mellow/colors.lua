@@ -34,7 +34,7 @@ M.dark = {
     gray07 = "#c1c0d4",
     -- Special
     none = "NONE",
-    -- TS-TREESITTER
+    -- ts-rainbow
     rain1 = "#b16286",
     rain3 = "#458588",
     rain6 = "#ea83a5",
