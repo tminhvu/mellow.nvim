@@ -173,14 +173,18 @@ local set_groups = function()
         { hg = "@keyword.function.clojure", fg = c.bright_cyan, gui = cfg.function_style },
 
         -- Diagnostics
-        { hg = "DiagnosticError", fg = c.red },
-        { hg = "DiagnosticWarn", fg = c.yellow },
-        { hg = "DiagnosticInfo", fg = c.blue },
-        { hg = "DiagnosticHint", fg = c.cyan },
-        { hg = "DiagnosticUnderlineError", fg = c.red, gui = "underline" },
-        { hg = "DiagnosticUnderlineWarn", fg = c.yellow, gui = "underline" },
-        { hg = "DiagnosticUnderlineInfo", fg = c.blue, gui = "underline" },
-        { hg = "DiagnosticUnderlineHint", fg = c.cyan, gui = "underline" },
+        { hg = "DiagnosticError", fg = c.cyan, gui = "bold" },
+        { hg = "DiagnosticWarn", fg = c.yellow, gui = "bold" },
+        { hg = "DiagnosticInfo", fg = c.blue, gui = "bold" },
+        { hg = "DiagnosticHint", fg = c.green, gui = "bold" },
+        { hg = "DiagnosticUnderlineError", sp = c.cyan, gui = "undercurl" },
+        { hg = "DiagnosticUnderlineWarn", sp = c.yellow, gui = "undercurl" },
+        { hg = "DiagnosticUnderlineInfo", sp = c.blue, gui = "undercurl" },
+        { hg = "DiagnosticUnderlineHint", sp = c.green, gui = "undercurl" },
+        { hg = 'DiagnosticVirtualTextError', fg = c.gray05, gui = "undercurl,bold" },
+        { hg = 'DiagnosticVirtualTextWarn', fg = c.gray05, gui = "undercurl,bold" },
+        { hg = 'DiagnosticVirtualTextHint', fg = c.gray05, gui = "undercurl,bold" },
+        { hg = 'DiagnosticVirtualTextInfo', fg = c.gray05, gui = "undercurl,bold" },
 
         -- Neovim's built-in language server client
         { hg = "LspReferenceWrite", fg = c.blue, gui = "underline" },
