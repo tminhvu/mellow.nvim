@@ -36,7 +36,7 @@ A soothing dark color scheme for neovim.
 
 ## Installation
 
-Head to the original at [kvrohit/mellow.nvim](https://github.com/kvrohit/mellow.nvim) instead, for this is has my personal customizations
+Head to the original at [kvrohit/mellow.nvim](https://github.com/kvrohit/mellow.nvim) instead, for this has my personal customizations
 
 ## Credits
 
