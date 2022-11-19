@@ -196,6 +196,7 @@ local set_groups = function()
         { hg = "GitSignsAdd", fg = c.green },
         { hg = "GitSignsChange", fg = c.yellow },
         { hg = "GitSignsDelete", fg = c.red },
+        { hg = "GitSignsCurrentLineBlame", fg = c.gray05, gui='bold' },
 
         -- Diff
         { hg = "diffAdded", fg = c.bright_green },
