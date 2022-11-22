@@ -57,7 +57,7 @@ local set_groups = function()
         { hg = "SpecialChar", fg = c.yellow }, -- special character in a constant
         { hg = "Tag", fg = c.yellow }, -- you can use CTRL-] on this
         { hg = "Delimiter" }, -- character that needs attention
-        { hg = "SpecialComment", fg = c.gray05 }, -- special things inside a comment
+        { hg = "SpecialComment", fg = c.gray07 }, -- special things inside a comment
         { hg = "Debug" }, -- debugging statements
         { hg = "Underlined", gui = "underline" }, -- text that stands out, HTML links
         { hg = "Ignore" }, -- left blank, hidden
