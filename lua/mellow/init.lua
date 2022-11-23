@@ -158,7 +158,7 @@ local set_groups = function()
         { hg = "@parameter", fg = c.cyan },
         { hg = "@property", fg = c.yellow },
         { hg = "@punctuation", fg = c.yellow },
-        { hg = "@punctuation.delimiter", fg = c.yellow },
+        { hg = "@punctuation.delimiter", fg = c.green },
         { hg = "@punctuation.bracket", fg = c.blue },
         { hg = "@symbol", fg = c.yellow },
         { hg = "@tag", fg = c.cyan },
