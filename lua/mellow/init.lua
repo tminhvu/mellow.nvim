@@ -36,7 +36,7 @@ local set_groups = function()
         { hg = "Boolean", fg = c.yellow, cfg.boolean_style }, -- a boolean constant: TRUE, false
         { hg = "Float", fg = c.magenta }, -- a floating point constant: 2.3e10
         { hg = "Identifier", fg = c.fg, cfg.variable_style }, -- any variable name
-        { hg = "Function", fg = c.white, gui = cfg.function_style }, -- function name (also: methods for classes)
+        { hg = "Function", fg = c.yellow, gui = cfg.function_style }, -- function name (also: methods for classes)
         { hg = "Statement", fg = c.white }, -- any statement
         { hg = "Conditional", fg = c.blue }, -- if, then, else, endif, switch, etc.
         { hg = "Repeat", fg = c.blue }, -- for, do, while, etc.
@@ -156,8 +156,8 @@ local set_groups = function()
         { hg = "@constant.builtin", fg = c.yellow },
         { hg = "@namespace", fg = c.cyan, gui = "italic" },
         { hg = "@parameter", fg = c.cyan },
-        { hg = "@property", fg = c.gray07 },
-        { hg = "@punctuation", fg = c.gray05 },
+        { hg = "@property", fg = c.yellow },
+        { hg = "@punctuation", fg = c.yellow },
         { hg = "@punctuation.delimiter", fg = c.yellow },
         { hg = "@punctuation.bracket", fg = c.blue },
         { hg = "@symbol", fg = c.yellow },
@@ -167,6 +167,7 @@ local set_groups = function()
         { hg = "@type.builtin", fg = c.magenta },
         { hg = "@variable", fg = c.fg, gui = cfg.variable_style },
         { hg = "@variable.parameter", fg = c.cyan, gui = cfg.variable_style },
+        { hg = "@variable.builtin", fg = c.green },
         -- Tree sitter language specific overrides
         { hg = "@constructor.javascript", fg = c.yellow },
         { hg = "@keyword.clojure", fg = c.bright_cyan, gui = cfg.keyword_style },
