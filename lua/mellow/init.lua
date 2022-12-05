@@ -162,6 +162,7 @@ local set_groups = function()
         { hg = "@punctuation.bracket", fg = c.blue },
         { hg = "@symbol", fg = c.yellow },
         { hg = "@tag", fg = c.cyan },
+        { hg = "@label", fg = c.yellow },
         { hg = "@tag.attribute", fg = c.bright_blue, gui = "italic" },
         { hg = "@tag.delimiter", fg = c.gray06 },
         { hg = "@type.builtin", fg = c.magenta },
