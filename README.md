@@ -37,7 +37,6 @@ A soothing dark color scheme for neovim.
 - [Lualine](https://github.com/nvim-lualine/lualine.nvim)
 - [Git Signs](https://github.com/lewis6991/gitsigns.nvim)
 - [Telescope](https://github.com/nvim-telescope/telescope.nvim)
-- [WhichKey](https://github.com/liuchengxu/vim-which-key)
 - [Indent Blankline](https://github.com/lukas-reineke/indent-blankline.nvim)
 - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
 
