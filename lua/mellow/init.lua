@@ -87,7 +87,7 @@ local set_groups = function()
         { hg = "ModeMsg" }, --' showmode' message (e.g., "-- INSERT --")
         { hg = "MoreMsg" }, -- more-prompt
         { hg = "NonText", fg = c.gray02 }, --'~' and '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line).
-        { hg = "Normal", fg = c.fg, bg = c.bg }, -- normal text
+        { hg = "Normal", fg = c.fg, bg = cfg.transparent and c.none or c.bg }, -- normal text
         { hg = "Pmenu", fg = c.white, bg = c.black }, -- Popup menu: normal item.
         { hg = "PmenuSel", fg = c.bright_white, bg = c.gray03 }, -- Popup menu: selected item.
         { hg = "PmenuSbar", bg = c.gray02 }, -- Popup menu: scrollbar.
@@ -130,18 +130,6 @@ local set_groups = function()
         { hg = "rainbowcol6", fg = c.rain6 },
         { hg = "rainbowcol7", fg = c.rain7 },
 
-        { hg = 'CmpItemAbbrDeprecated', fg = "#808080", gui = "strikethrough" },
-        { hg = 'CmpItemAbbrMatch', fg = "#569CD6" },
-        { hg = 'CmpItemAbbrMatchFuzzy', fg = "#569CD6" },
-        { hg = 'CmpItemKindVariable', fg = "#9CDCFE" },
-        { hg = 'CmpItemKindInterface', fg = "#9CDCFE" },
-        { hg = 'CmpItemKindText', fg = "#9CDCFE" },
-        { hg = 'CmpItemKindFunction', fg = "#C586C0" },
-        { hg = 'CmpItemKindMethod', fg = "#C586C0" },
-        { hg = 'CmpItemKindKeyword', fg = "#D4D4D4" },
-        { hg = 'CmpItemKindProperty', fg = "#D4D4D4" },
-        { hg = 'CmpItemKindUnit', fg = "#D4D4D4" },
-
         -- HTML
         { hg = "htmlArg", fg = c.bright_blue, gui = "italic" }, -- attributes
         { hg = "htmlEndTag", fg = c.gray06 }, -- end tag />
@@ -149,6 +137,17 @@ local set_groups = function()
         { hg = "htmlTag", fg = c.gray06 }, -- tag delimiters
         { hg = "htmlTagN", fg = c.gray06 },
         { hg = "htmlTagName", fg = c.cyan }, -- tag text
+
+        -- Cmp
+        { hg = "CmpItemAbbrDeprecated", fg = c.gray06, gui = "strikethrough" },
+        { hg = "CmpItemAbbrMatch", fg = c.blue, gui = "bold" },
+        { hg = "CmpItemAbbrMatchFuzzy", fg = c.blue, gui = "bold" },
+        { hg = "CmpItemMenu", fg = c.gray05 },
+        { hg = "CmpItemKindText", fg = c.gray06 },
+        { hg = "CmpItemKindFunction", fg = c.cyan },
+        { hg = "CmpItemKindVariable", fg = c.bright_white },
+        { hg = "CmpItemKindEnum", fg = c.green },
+        { hg = "CmpItemKindSnippet", fg = c.yellow },
 
         -- Tree sitter
         { hg = "@boolean", fg = c.yellow, gui = cfg.boolean_style },
@@ -209,6 +208,25 @@ local set_groups = function()
         { hg = "diffFile", fg = c.gray05 },
         { hg = "diffLine", fg = c.cyan },
         { hg = "diffIndexLine", fg = c.magenta },
+
+        -- Hop
+        { hg = "HopNextKey", fg = c.bright_yellow },
+        { hg = "HopNextKey1", fg = c.bright_blue },
+        { hg = "HopNextKey2", fg = c.bright_cyan },
+        { hg = "HopUnmatched", fg = c.gray04 },
+        { hg = "HopCursor", fg = c.bright_cyan },
+        { hg = "HopPreview", fg = c.bright_blue },
+
+        -- Cmp
+        { hg = "CmpItemAbbrDeprecated", fg = c.gray06, gui = "strikethrough" },
+        { hg = "CmpItemAbbrMatch", fg = c.blue, gui = "bold" },
+        { hg = "CmpItemAbbrMatchFuzzy", fg = c.blue, gui = "bold" },
+        { hg = "CmpItemMenu", fg = c.gray05 },
+        { hg = "CmpItemKindText", fg = c.gray06 },
+        { hg = "CmpItemKindFunction", fg = c.cyan },
+        { hg = "CmpItemKindVariable", fg = c.bright_white },
+        { hg = "CmpItemKindEnum", fg = c.green },
+        { hg = "CmpItemKindSnippet", fg = c.yellow },
     }
 
     utils.highlight(highlights)
