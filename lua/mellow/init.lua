@@ -116,6 +116,7 @@ local set_groups = function()
         { hg = "Winbar", fg = c.white, bg = c.gray01, gui = "bold" }, -- Winbar
         { hg = "WinbarNC", fg = c.gray05, bg = c.bg_dark }, -- Winbar non-current windows.
         { hg = "WinBarError", fg = c.cyan, gui = "bold,italic" },
+        { hg = "WinSeparator", fg = c.gray04, gui = "bold,italic" },
 
         { hg = "EndOfBuffer", fg = c.bg },
         { hg = "NvimTreeEndOfBuffer", fg = c.bg_darker },
